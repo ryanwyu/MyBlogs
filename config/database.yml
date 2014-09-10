@@ -25,5 +25,8 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  username: ryanyu
+  password: psql1234
+  database: ryanyublogs
+  timeout: 5000
